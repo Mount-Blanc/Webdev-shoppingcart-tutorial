@@ -1,6 +1,14 @@
+import { Routes, Route} from "react-router-dom"
+import { Container } from "react-bootstrap"
+
+
 
 function App() {
-  return <h1>Hello</h1>
+  return <Container>
+  <Routes>
+      <Route path='/' element ={<Home />} />
+  </Routes>
+  </Container>
 }
 
 export default App
