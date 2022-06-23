@@ -16,6 +16,7 @@ return (
         <Card.Img variant='top' src={imgUrl} height='200px' style={
          {objectFit:'cover'}}
          />
+         <Card.Body className='d-flex flex-column'>
          <Card.Title className ="d-flex flex-column
          justify-content-space-between align-items-baseline
          mb-4">
@@ -23,6 +24,7 @@ return (
             <span className='ms-2 text-muted'>{price}</span>
 
          </Card.Title>
+        </Card.Body>
     </Card>
 )
 }
