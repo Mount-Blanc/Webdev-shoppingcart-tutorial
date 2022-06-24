@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap"
-import sotreItems from '../data/items.json'
+import storeItems from '../data/items.json'
+import { formatCurrency } from '../utilities/formatCurreny'
 
 type StoreItemProps = {
     id:number
@@ -9,7 +10,9 @@ type StoreItemProps = {
 }
 
 
-export function StoreItem({ id, name, price, imgUrl}:StoreItemProps) {
+export function StoreItems({ id, name, price, imgUrl}:StoreItemProps) {
+
+    
 return (
 
     <Card>
@@ -21,8 +24,7 @@ return (
          justify-content-space-between align-items-baseline
          mb-4">
             <span className='fs-2'>{name}</span>
-            <span className='ms-2 text-muted'>{price}</span>
-
+            <span className='ms-2 text-muted'>{formatCurrency (price)}</span>
          </Card.Title>
         </Card.Body>
     </Card>

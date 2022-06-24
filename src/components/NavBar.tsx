@@ -1,4 +1,5 @@
 import {Container, Nav, Navbar as NavbarBs} from "react-bootstrap"
+import { NavLink } from "react-router-dom"
 
 export function NavBar () {
     return (
@@ -14,11 +15,6 @@ export function NavBar () {
                     About
                 </Nav.Link>
             </Nav>
-            <Button>
-                <div className='rounded-circle bg-danger d-flex justify-content-center
-                align-items-center'
-                 style={{ color:'white'}}></div>
-            </Button>
         </Container>
      </NavbarBs>
     )

@@ -3,25 +3,25 @@
         "id":1,
         "name": "Book",
         "price": 10.99,
-        "imgUrl": "/"
+        "imgUrl": "/img/img.jpg"
     },
     {
         "id":2,
         "name": "Computer",
         "price": 10.99,
-        "imgUrl": "/"
+        "imgUrl": "/img/img.jpg"
     },
     {
         "id":3,
         "name": "Banana",
         "price": 10.99,
-        "imgUrl": "/"
+        "imgUrl": "/img/img.jpg"
     },
     {
         "id":4,
         "name": "sloth",
         "price": 10.99,
-        "imgUrl": "/"
+        "imgUrl": "/img/img.jpg"
     }
 
 
