@@ -25,7 +25,7 @@ return useContext(ShoppingCartContext)
 }
 
 export function ShoppingCartProvider( {children }:ShoppingCartProviderProps) {
-    const[cartItems, setCartItems] = useState<CartItemArray>([])
+    const[cartItems, setCartItems] = useState<CartItem[]>([])
     
     function getItemQuantity(id: number) {
         return cartItems.find(item => item.id === id)?.quantity || 0
