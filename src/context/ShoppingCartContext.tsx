@@ -17,7 +17,7 @@ type ShoppingCartContext = {
 
 }
 
-const shoppingCartContext= createContext({} as ShoppingCartContext)
+const ShoppingCartContext= createContext({} as ShoppingCartContext)
 
 export function useShoppingCart() {
 return useContext(ShoppingCartContext)
@@ -42,9 +42,9 @@ export function ShoppingCartProvider( {children }:ShoppingCartProviderProps) {
                     }else {
                             return item
                         }
-                }
-        })
-            }
+                      }
+                )}
+           }
         
     return (<shoppingCartContext.Provider value = {{}}>
         {children}
